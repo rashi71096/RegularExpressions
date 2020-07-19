@@ -1,0 +1,131 @@
+{
+    "results": [
+    {
+        "_class": "question",
+        "course": {
+            "_class": "course",
+            "title": "Angular 7",
+            "cost": 500
+        },
+        "replies": [
+            {
+            "_class": "answer",
+            "user": {
+            "_class": "user",
+            "display_name": "Shirish Patil"
+            }
+            }
+        ]
+    },
+    {
+        "_class": "question",
+        "course": {
+            "_class": "course",
+            "title": "Python",
+            "cost": 720
+        },
+        "replies": [
+            {
+            "_class": "answer",
+            "user": {
+            "_class": "user",
+            "display_name": "Shravani Mahajan"
+            }
+        },
+        {
+            "_class": "answer",
+            "user": {
+            "_class": "user",
+            "display_name": "Shweta Kulkarni"
+            }
+        }
+        ]
+    },
+    {
+        "_class": "question",
+        "course": {
+            "_class": "course",
+            "title": "NodeJs",
+            "cost": 600
+        },
+        "replies": [
+        {
+            "_class": "answer",
+            "user": {
+            "_class": "user",
+            "display_name": "Swati Joshi"
+            }
+        },
+        {
+            "_class": "answer",
+            "user": {
+            "_class": "user",
+            "display_name": "Rashi Gupta"
+            }
+        },
+        {
+            "_class": "answer",
+            "user": {
+            "_class": "user",
+            "display_name": "Gayatri Patil"
+            }
+        },
+        {
+            "_class": "answer",
+            "user": {
+            "_class": "user",
+            "display_name": "Pallavi Mudgade"
+            }
+        }
+        ]
+    },
+    {
+        "_class": "question",
+        "course": {
+            "_class": "course",
+            "title": "MongoDB",
+            "cost": 450
+        },
+        "replies": [
+            {
+                "_class": "answer",
+                "user": {
+                "_class": "user",
+                "display_name": "Gayatri Patil"
+                }
+            }
+        ]
+    },
+    {
+        "_class": "question",
+        "course": {
+            "_class": "course",
+            "title": "Java",
+            "cost": 400
+        },
+        "replies": [
+            {
+                "_class": "answer",
+                "user": {
+                "_class": "user",
+                "display_name": "Nidhee Patil"
+                }
+            },
+            {
+                "_class": "answer",
+                "user": {
+                "_class": "user",
+                "display_name": "Sudarshan Usnale"
+                }
+            },
+            {
+                "_class": "answer",
+                "user": {
+                "_class": "user",
+                "display_name": "Ninad Pawar"
+                }
+            }
+        ]
+    }
+]
+}
