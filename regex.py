@@ -2,7 +2,7 @@
 """
 Created on Sun Jul 19 17:08:55 2020
 
-@author: abc
+@author: Rashi
 """
 
 
@@ -35,8 +35,37 @@ def get_user_name():
                 if(reObj.match(key)):
                     print (user[key])
                     
+def is_valid_aadhar(aadharInput):
+    import re
+    valid_aadhar = re.search('^[2-9]{1}[0-9]{3}\\s[0-9]{4}\\s[0-9]{4}$', aadharInput)
+    print("Input for aadhar validation: ",aadharInput)
+    if(valid_aadhar):
+        print(aadharInput," is a valid aadhar number")
+        return True
+    else:
+        print(aadharInput, " is not a valid aadhar number")
+        return False
+        
+    
+
+def is_date(string_input):
+    import re, datetime
+    match = re.findall('\d{4}-\d{2}-\d{2}', string_input)
+    if(len(match)>0):
+        print('The string ',string_input," has the following dates:\n")
+        for dateMatched in match:
+            date = datetime.datetime.strptime(dateMatched, '%Y-%m-%d')
+            print(date)
+        return True
+    else:
+        print('No dates present in string')
+        return False
+        
+
+
 print("Following is the user names in the  json file :")
 get_user_name()
+
 string_input=input('Please enter any string to check if it contains any link in it: ')
 if(string_input):
-    is_valid_url(string_input)
+    is_date(string_input)
