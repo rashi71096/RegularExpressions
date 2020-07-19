@@ -6,10 +6,15 @@ import re
 def is_it_phone_no():
     phone = input("Enter the phone number: ")
     if re.search("\d{3}-\d{3}-\d{4}", phone) and len(phone)==12 :
-        print("It is a phone number"
+        print("It is a valid phone number")
+        return True
     else:
-        print('It is not a phone number')
+        print('It is not a valid phone number')
+        return False
 
-is_it_phone_no()
+
+#Following function call is for the sake of example
+Temp = is_it_phone_no()
+print(Temp)
 
 
