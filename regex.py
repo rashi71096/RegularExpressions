@@ -16,32 +16,31 @@ from phoneNoValidation import is_it_phone_no
 
 print('Regular Expression')
 
-answer=='YES'
+answer = 'Y'
 
-while answer=='YES':
+while answer=='Y':
     print('\n1.To get user name from JSON file \n2.To get URL from given string  \n3.To get date and time from string \n4.Password validation \n5.Aadhaar No validation \n6.Email validation \n7.Phone No validation /n')
-    value=int(input('Enter your choice: '))
-    if value==1:
+    value=input('Enter your choice: ')
+    if value == '1':
         get_user_name()
-    elif value==2:
+    elif value == '2':
         url=input("Enter your string")
         is_valid_url(url)
-    elif value==3:
+    elif value == '3':
         ans=input("Enter your string")
         is_date(ans)
-    elif value==4:
+    elif value == '4':
         password_validation()
-    elif value==5:
+    elif value == '5':
         aadhaar = input("Enter Aadhaar No")
         is_valid_aadhar(aadhaar)
-    elif value==6:
-        Temp = email_validation()
-        print(Temp)
-    elif value==7:
-        Temp = is_it_phone_no()
-        print(Temp)
+    elif value == '6':
+        email_validation()
+    elif value == '7':
+        is_it_phone_no()
     else:
         print("Wrong Choice")
         
-    print("Do you want to continue? if Yes enter YES and for No enter NO")
+    print("Do you want to continue? if Yes enter Y and for No enter any other key: ")
     answer=input()
+
