@@ -12,6 +12,4 @@ def email_validation():
             print('It is not a valid email address')
             return False
 
-#Following function call is for the sake of example
-Temp = email_validation()
-print(Temp)
+
