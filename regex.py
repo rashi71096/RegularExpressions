@@ -13,11 +13,28 @@ from dateExtraction import is_date
 from passwordValidation import password_validation
 from phoneNoValidation import is_it_phone_no
 
-print("Following is the user names in the  json file :")
-get_user_name()
-is_valid_url('https://www.google.com')
-email_validation()
-is_valid_aadhar('5231 8352 5406')
-is_date('My DOB is 1996-10-07 and current date is 2020-07-20')
-password_validation()
-is_it_phone_no()
+print('Regular Expression')
+print('\n1.To get user name from JSON file \n2.To get URL from given string  \n3.To get date and time from string \n4.Password validation \n5.Aadhaar No validation \n6.Email validation \n7.Phone No validation /n')
+value=int(input('Enter your choice: '))
+
+if value==1:
+    get_user_name()
+elif value==2:
+    url=input("Enter your string")
+    is_valid_url(url)
+elif value==3:
+    ans=input("Enter your string")
+    is_date(ans)
+elif value==4:
+    password_validation()
+elif value==5:
+    aadhaar = input("Enter Aadhaar No")
+    is_valid_aadhar(aadhaar)
+elif value==6:
+    Temp = email_validation()
+    print(Temp)
+elif value==7:
+    Temp = is_it_phone_no()
+    print(Temp)
+else:
+    print("Wrong Choice")
