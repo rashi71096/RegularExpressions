@@ -13,8 +13,5 @@ def is_it_phone_no():
         return False
 
 
-#Following function call is for the sake of example
-Temp = is_it_phone_no()
-print(Temp)
 
 
