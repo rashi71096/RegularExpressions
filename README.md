@@ -32,7 +32,7 @@ Run the regex.py file.
 
 3. Extract date(s) from the string if present.
 
-4. Validate email id and return TRUE if vslid or FALSE.
+4. Validate email id and return TRUE if valid or FALSE.
 
 5. Fetch User Name attribute from uploaded JSON.
 
