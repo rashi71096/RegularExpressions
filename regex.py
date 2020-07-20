@@ -2,7 +2,7 @@
 """
 Created on Sun Jul 19 17:08:55 2020
 
-@author: Rashi
+@author: Rashi,Sudarshan,Shweta
 """
 
 from emailValidation import email_validation
