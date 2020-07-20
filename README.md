@@ -38,4 +38,4 @@ Run the regex.py file.
 
 6. Validate password in order to contain > numbers,capital letter,small letter,special character and having length greater than 8.
 
-7. Validate phone and return TRUE if vslid or FALSE.
+7. Validate phone and return TRUE if valid or FALSE.
