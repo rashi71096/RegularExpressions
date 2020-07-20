@@ -24,7 +24,4 @@ def password_validation():
             print("Your password is perfect!")
             return True
 
-#Following function call is for the sake of example
-Temp = password_validation()
-print(Temp)
 
