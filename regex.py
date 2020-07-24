@@ -2,41 +2,45 @@
 """
 Created on Sun Jul 19 17:08:55 2020
 
-@author: abc
+@author: Rashi,Sudarshan,Shweta
 """
 
+from emailValidation import email_validation
+from containsUrl import is_valid_url
+from getUserName import get_user_name
+from aadharValidation import is_valid_aadhar
+from dateExtraction import is_date
+from passwordValidation import password_validation
+from phoneNoValidation import is_it_phone_no
 
-#To get URL from the given string 
-#example = "To study the Regular Expression you can go to "https://w3resource.com" and for any problem you can refer "http://github.com" as well."
-def is_valid_url(text):
-    import re
-    urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
-    print("Original string: ",text)
-    if(urls == []):
-        print('This string does not contain any valid URL')
+
+print('Regular Expression')
+
+answer = 'Y'
+
+while answer=='Y':
+    print('\n1.To get user name from JSON file \n2.To get URL from given string  \n3.To get date and time from string \n4.Password validation \n5.Aadhaar No validation \n6.Email validation \n7.Phone No validation /n')
+    value=input('Enter your choice: ')
+    if value == '1':
+        get_user_name()
+    elif value == '2':
+        url=input("Enter your string")
+        is_valid_url(url)
+    elif value == '3':
+        ans=input("Enter your string")
+        is_date(ans)
+    elif value == '4':
+        password_validation()
+    elif value == '5':
+        aadhaar = input("Enter Aadhaar No")
+        is_valid_aadhar(aadhaar)
+    elif value == '6':
+        email_validation()
+    elif value == '7':
+        is_it_phone_no()
     else:
-        print("URL in the string: ",urls)
+        print("Wrong Choice")
         
+    print("Do you want to continue? if Yes enter Y and for No enter any other key: ")
+    answer=input()
 
-
-#To get all the users who has given answers in the course
-def get_user_name():
-    import json
-    import re
-    with open('./Source.json') as access_json:
-        read_content = json.load(access_json)
-    reObj = re.compile('display_name')
-    question_access = read_content['results']
-    for question_data in question_access:
-        replies_access = question_data['replies']
-        for replies_data in replies_access:
-            user=replies_data['user']
-            for key in user.keys():
-                if(reObj.match(key)):
-                    print (user[key])
-                    
-print("Following is the user names in the  json file :")
-get_user_name()
-string_input=input('Please enter any string to check if it contains any link in it: ')
-if(string_input):
-    is_valid_url(string_input)
