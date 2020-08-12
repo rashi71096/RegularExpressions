@@ -4,12 +4,14 @@
 import re
 
 def is_valid_aadhar(aadharInput):
-    valid_aadhar = re.search('^[2-9]{1}[0-9]{3}\\s[0-9]{4}\\s[0-9]{4}$', aadharInput)
+    valid_aadhar = re.search('\d{4} \d{4} \d{4}', aadharInput)
     print("Input for aadhar validation: ",aadharInput)
-    if(valid_aadhar):
-        print(aadharInput," is a valid aadhar number")
+    if valid_aadhar is not None:
+        adhar  = valid_aadhar.group()
+        print("This string contain valid adhar number and the adhar no is " + adhar )
         return True
     else:
-        print(aadharInput, " is not a valid aadhar number")
+        print('This string does not contain the valid adhar number')
         return False
+        
         
