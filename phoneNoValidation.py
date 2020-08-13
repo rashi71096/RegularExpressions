@@ -4,12 +4,14 @@
 import re
 
 def is_it_phone_no():
-    phone = input("Enter the phone number: ")
-    if re.search("\d{3}-\d{3}-\d{4}", phone) and len(phone)==12 :
-        print("It is a valid phone number")
+    phone = input("Enter the string to find does it contain phone no or not: ")
+    phone_match = re.search("\d{3}-\d{3}-\d{4}", phone)
+    if phone_match is not None:
+        phoneNo = phone_match.group()
+        print('This string contains valid phone no and it is ' + phoneNo )
         return True
     else:
-        print('It is not a valid phone number')
+        print('This string does not contain the valid phone no')
         return False
 
 
