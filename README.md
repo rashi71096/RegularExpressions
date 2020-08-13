@@ -26,16 +26,16 @@ Run the regex.py file.
 
 # The Regex file is expected to perform the following operations:
 
-1. Validate aadhar number and return TRUE if valid or FALSE.
+1. Extract valid aadhar number from a string if present.
 
 2. Extract URL(s) from string if present.
 
 3. Extract date(s) from the string if present.
 
-4. Validate email id and return TRUE if valid or FALSE.
+4. Extract email id from string if valid email id present.
 
 5. Fetch User Name attribute from uploaded JSON.
 
 6. Validate password in order to contain > numbers,capital letter,small letter,special character and having length greater than 8.
 
-7. Validate phone and return TRUE if valid or FALSE.
+7. Extract phone number from the string if present.
