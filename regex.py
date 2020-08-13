@@ -2,7 +2,7 @@
 """
 Created on Sun Jul 19 17:08:55 2020
 
-@author: Rashi,Sudarshan,Shweta
+@author: Sudarshan,Shweta
 """
 
 from emailValidation import email_validation
@@ -13,9 +13,7 @@ from dateExtraction import is_date
 from passwordValidation import password_validation
 from phoneNoValidation import is_it_phone_no
 
-
 print('Regular Expression')
-
 answer = 'Y'
 
 while answer=='Y':
@@ -24,15 +22,15 @@ while answer=='Y':
     if value == '1':
         get_user_name()
     elif value == '2':
-        url=input("Enter your string")
+        url=input("Enter your string string for checking does it contain URL \n")
         is_valid_url(url)
     elif value == '3':
-        ans=input("Enter your string")
+        ans=input("Enter your string for date and time checking \n")
         is_date(ans)
     elif value == '4':
         password_validation()
     elif value == '5':
-        aadhaar = input("Enter Aadhaar No")
+        aadhaar = input("Enter string for checking is there aadhar no exists")
         is_valid_aadhar(aadhaar)
     elif value == '6':
         email_validation()
